@@ -1,0 +1,52 @@
+---
+# Input file for Tyndall field sweep.  The sweep will consist of two
+#     passed, i.e. up and back.
+field_data:
+   # The southwest corner point of the field.  The point is defined as
+   #    latitude and longitude in decimal degrees.  The field angle is
+   #    measured from the East direction.  Field area is given in units
+   #    of m^2.
+   point_0: [29.96758547759537,-85.47201795001415]
+   angle_degrees: -2.8
+   area: 1000.0  #was 1115.0
+   number_of_sweeps: 2
+vehicle_parameters:
+   # All length values are given in meters.
+   minimum_turn_radius: 2.0
+   dist_wheelbase: 1.844
+   dist_from_rear_axle_to_hitch: 1.39
+   dist_from_hitch_to_trailer_axle: 2.736
+   dist_from_hitch_to_nozzle: 3.7655
+   dist_from_nozzle_to_water_drop: 4.572
+sweep_parameters:
+   # Field will have a total of 2 sweeps (up and back).  All length values 
+   #      are given in meters.
+   water_spray_width: 7.5
+   overlap_distance: 0.3
+   dist_for_entry_extension: 6.0
+   dist_for_exit_extension_from_water_off: 1.0
+refill_parameters:
+   refill_pose:
+       point: [29.96774470806787, -85.47236805207417 ]
+       angle_degrees: -2.8
+   pre_refill_dist: 5.5  # used to get an approach point for refill pose
+   post_refill_dist: 5.5 # used to get a departure point from refill pose
+   refill_road: 'edge_2' # edge_i contains field points i and (i+1)%num_field_pts
+   boundary_expansion_dist: 2.0  # used to expand boundary to get 'no-go' region when travelling to/from refill pose
+boundary_polygon:  # note that the first point is repeated at the end of the list
+   points: [29.96782593519432, -85.47249506798846,
+            29.96771214259687, -85.47251446138685,
+            29.96769463916285, -85.47223403916462,
+            29.96775988263796, -85.47222890527557,
+            29.96775684014711, -85.47216411624051,
+            29.96759382552708, -85.47217804841375,
+            29.96758472079672, -85.47203030200691,
+            29.96774194719779, -85.47201857341105,
+            29.96770226305193, -85.47127994878997,
+            29.96754525323194, -85.47128737203528,
+            29.96753931219777, -85.47115512902951,
+            29.9677096907375, -85.4711438544379,
+            29.9677780924778, -85.47231996626573,
+            29.9678153514396, -85.47233443311575,
+            29.96782593519432, -85.47249506798846]
+

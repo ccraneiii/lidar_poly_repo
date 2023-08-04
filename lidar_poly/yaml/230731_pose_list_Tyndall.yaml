@@ -1,0 +1,227 @@
+---
+# 1) Paths are defined by a series of poses, i.e. 'field_sweep', 'exit_row_1_to_pre_refill', ...
+# 2) Point coordinates are written in UTM coordinates in units of meters.
+# 3) Heading angles are in units of degrees ; East is 0 degrees and North is 90 degrees.
+# 4) State values are defined by the python dictionary which is presented at the bottom of this file
+field_points_UTM:
+# The field to be swept. Major search axis is parallel to line from point 0 to point 1.
+#    Points are defined as UTM Easting/Northing coordinates.
+   points: [ 647427.0226137445, 3316175.6612334345, 647494.968609482, 3316172.338119843, 647495.686701098, 3316187.020570062, 647427.7407053604 ,  3316190.3436836535 ]
+extended_boundary:
+#These are the coordinates of a polygon which the vehicle should remain
+#   inside of when travelling to or from the refill location.  Points are
+#   written in UTM coordinates.
+   points: [[ 647376.6537976974 , 3316187.1898945672 ],
+           [ 647407.8961330316 ,  3316185.3681127024 ],
+           [ 647408.2971384318 ,  3316192.6405983465 ],
+           [ 647410.5444517453 ,  3316192.5493971095 ],
+           [ 647409.4428177545 ,  3316174.498888765 ],
+           [ 647427.725528108 ,  3316173.449489535 ],
+           [ 647428.6260504008 ,  3316190.907637181 ],
+           [ 647496.0107747882 ,  3316187.650319423 ],
+           [ 647495.5258745174 ,  3316170.219923476 ],
+           [ 647512.2600509388 ,  3316169.580014898 ],
+           [ 647513.2717630911 ,  3316192.4430781365 ],
+           [ 647399.035922754 ,  3316198.5458323546 ],
+           [ 647397.5891604589 ,  3316202.6445330726 ],
+           [ 647378.894101851 ,  3316203.809023764 ]]
+field_sweep:
+  - pose:
+       pt: [ 647421.2056360916 ,  3316179.5500341477 ]
+       heading_deg:  -2.7999999998900518
+       state:  3
+  - pose:
+       pt: [ 647427.1984729157 ,  3316179.256935529 ]
+       heading_deg:  -2.7999999998900518
+       state:  1
+  - pose:
+       pt: [ 647436.9143596167 ,  3316178.7817493933 ]
+       heading_deg:  -2.7999999998900518
+       state:  13
+  - pose:
+       pt: [ 647495.1444686532 ,  3316175.9338219375 ]
+       heading_deg:  -2.7999999998900518
+       state:  0
+  - pose:
+       pt: [ 647504.8603553543 ,  3316175.458635802 ]
+       heading_deg:  -2.7999999998900518
+       state:  14
+  - pose:
+       pt: [ 647505.8591614916 ,  3316175.409786032 ]
+       heading_deg:  -2.7999999998900518
+       state:  4
+  - pose:
+       pt: [ 647507.0877523444 ,  3316177.4419826865 ]
+       heading_deg:  120.4887914578474
+       state:  6
+  - pose:
+       pt: [ 647505.2544636538 ,  3316180.555682004 ]
+       heading_deg:  120.4887914578474
+       state:  5
+  - pose:
+       pt: [ 647501.4890238198 ,  3316182.832127508 ]
+       heading_deg:  177.20000000010995
+       state:  3
+  - pose:
+       pt: [ 647495.4961869958 ,  3316183.1252261265 ]
+       heading_deg:  177.20000000010995
+       state:  1
+  - pose:
+       pt: [ 647485.7803002947 ,  3316183.600412262 ]
+       heading_deg:  177.20000000010995
+       state:  13
+  - pose:
+       pt: [ 647427.5501912582 ,  3316186.448339718 ]
+       heading_deg:  177.20000000010995
+       state:  0
+  - pose:
+       pt: [ 647417.8343045572 ,  3316186.9235258535 ]
+       heading_deg:  177.20000000010995
+       state:  14
+  - pose:
+       pt: [ 647416.8354984198 ,  3316186.9723756234 ]
+       heading_deg:  177.20000000010995
+       state:  4
+exit_row_1_to_refill:
+  - pose:
+       pt: [ 647505.8591614916 ,  3316175.409786032 ]
+       heading_deg:  -2.7999999998900518
+       state:  4
+  - pose:
+       pt: [ 647508.5830668502 ,  3316177.8796725874 ]
+       heading_deg:  87.20000000010995
+       state:  23
+  - pose:
+       pt: [ 647508.8908204001 ,  3316184.1721512536 ]
+       heading_deg:  87.20000000010995
+       state:  24
+  - pose:
+       pt: [ 647498.0644902352 ,  3316189.553379948 ]
+       heading_deg:  175.97669712046414
+       state:  25
+  - pose:
+       pt: [ 647397.5947761999 ,  3316196.6199699594 ]
+       heading_deg:  177.2
+       state:  25
+  - pose:
+       pt: [ 647387.7547841027 ,  3316198.1209526546 ]
+       heading_deg:  177.2
+       state:  26
+  - pose:
+       pt: [ 647385.1356443347 ,  3316195.7460617363 ]
+       heading_deg:  -92.8
+       state:  27
+  - pose:
+       pt: [ 647387.5105352537 ,  3316193.126921968 ]
+       heading_deg:  -2.8
+       state:  18
+  - pose:
+       pt: [ 647393.003969009 ,  3316192.8582482343 ]
+       heading_deg:  -2.8
+       state:  29
+exit_row_2_to_refill:
+  - pose:
+       pt: [ 647416.8354984198 ,  3316186.9723756234 ]
+       heading_deg:  177.20000000010995
+       state:  4
+  - pose:
+       pt: [ 647412.6650824575 ,  3316194.4649831974 ]
+       heading_deg:  171.8621261424494
+       state:  25
+  - pose:
+       pt: [ 647397.5947761999 ,  3316196.6199699594 ]
+       heading_deg:  177.2
+       state:  25
+  - pose:
+       pt: [ 647387.7547841027 ,  3316198.1209526546 ]
+       heading_deg:  177.2
+       state:  26
+  - pose:
+       pt: [ 647385.1356443347 ,  3316195.7460617363 ]
+       heading_deg:  -92.8
+       state:  27
+  - pose:
+       pt: [ 647387.5105352537 ,  3316193.126921968 ]
+       heading_deg:  -2.8
+       state:  18
+  - pose:
+       pt: [ 647393.003969009 ,  3316192.8582482343 ]
+       heading_deg:  -2.8
+       state:  29
+post_refill_to_entry_row_2:
+  - pose:
+       pt: [ 647398.4974027644 ,  3316192.5895745005 ]
+       heading_deg:  -2.8
+       state:  19
+  - pose:
+       pt: [ 647406.408697025 ,  3316194.7188819703 ]
+       heading_deg:  -2.3239216992059846
+       state:  25
+  - pose:
+       pt: [ 647412.6650824575 ,  3316194.4649831974 ]
+       heading_deg:  -3.2916442047314414
+       state:  25
+  - pose:
+       pt: [ 647498.0644902352 ,  3316189.553379948 ]
+       heading_deg:  -3.2916442047314414
+       state:  25
+  - pose:
+       pt: [ 647504.2129291784 ,  3316185.302014063 ]
+       heading_deg:  267.20000000011
+       state:  28
+  - pose:
+       pt: [ 647501.4890238198 ,  3316182.832127508 ]
+       heading_deg:  177.20000000010995
+       state:  3
+post_refill_to_entry_row_1:
+  - pose:
+       pt: [ 647398.4974027644 ,  3316192.5895745005 ]
+       heading_deg:  -2.8
+       state:  19
+  - pose:
+       pt: [ 647406.408697025 ,  3316194.7188819703 ]
+       heading_deg:  -2.3239216992059846
+       state:  25
+  - pose:
+       pt: [ 647412.6650824575 ,  3316194.4649831974 ]
+       heading_deg:  -2.3239216992059846
+       state:  25
+  - pose:
+       pt: [ 647421.2056360916 ,  3316179.5500341477 ]
+       heading_deg:  -2.7999999998900518
+       state:  28
+  - pose:
+       pt: [ 647421.2056360916 ,  3316179.5500341477 ]
+       heading_deg:  -2.7999999998900518
+       state:  3
+state_dict:
+   'TRACTOR_OFF' : 0
+   'TRACTOR_ON' : 1
+   'TRACTOR_OUTSIDE' : 2
+   'TRACTOR_ENTRY_EXTENSION_PT' : 3
+   'TRACTOR_EXIT_EXTENSION_PT' : 4
+   'TRACTOR_ENTRY_TURN_PT' : 5
+   'TRACTOR_EXIT_TURN_PT' : 6
+   'TRACTOR_START' : 7
+   'TRACTOR_END' : 8
+   'TRACTOR_UTURN_PT1' : 9
+   'TRACTOR_UTURN_PT2' : 10
+   'TRACTOR_UTURN_PT3' : 11
+   'TRACTOR_CORNER' : 12
+   'NOZZLE_ON' : 13
+   'NOZZLE_OFF' : 14
+   'EXTRA_EDGE' : 15
+   'EDGE1_TO_REFILL_PT1' : 16
+   'EDGE1_TO_REFILL_MID_PT' : 17
+   'PRE_REFILL_PT' : 18
+   'POST_REFILL_PT' : 19
+   'EDGE3_RETURN_PT' : 20
+   'EDGE1_RETURN_PT' : 21
+   'END_PLUS_ONE' : 22
+   'EXIT_LEFT' : 23
+   'FAR_EDGE_EXIT' : 24
+   'ASTAR_POINT' : 25
+   'PRE_PRE_REFILL_PT' : 26
+   'PRE_REFILL_U_TURN_PT' : 27
+   'PRE_ROW_ENTRY_PT' : 28
+   'REFILL_PT' : 29

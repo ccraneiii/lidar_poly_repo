@@ -1,0 +1,6 @@
+---
+int16        num_poses
+float64[100] pose_x
+float64[100] pose_y
+float64[100] heading_deg
+int16[100]   state
